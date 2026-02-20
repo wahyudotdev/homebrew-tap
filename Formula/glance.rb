@@ -5,21 +5,21 @@
 class Glance < Formula
   desc "Glance is a specialized MITM proxy for AI Agents and developers."
   homepage "https://github.com/wahyudotdev/glance"
-  version "0.1.3"
+  version "0.1.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/wahyudotdev/glance/releases/download/v0.1.3/glance_Darwin_x86_64.tar.gz"
-      sha256 "5a4bcb4bf900eb570ef164f2cbf43e9072331c6d05ca66597e8e796d50aa37f9"
+      url "https://github.com/wahyudotdev/glance/releases/download/v0.1.4/glance_Darwin_x86_64.tar.gz"
+      sha256 "d00414238db23e4d520dc8e5aade5e24f9a1021a31b8e9ed2dc5e201ebeb55bb"
 
       def install
         bin.install "glance"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/wahyudotdev/glance/releases/download/v0.1.3/glance_Darwin_arm64.tar.gz"
-      sha256 "c6945e97d076f1543b6e71d393233ec32ac11fe4f7cd80e96ac819b2516ad98d"
+      url "https://github.com/wahyudotdev/glance/releases/download/v0.1.4/glance_Darwin_arm64.tar.gz"
+      sha256 "5aed27d8604a1c318138da4b2f2fe20c66ea9460887e9dedb95cc21c215cf1d3"
 
       def install
         bin.install "glance"
@@ -29,15 +29,15 @@ class Glance < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/wahyudotdev/glance/releases/download/v0.1.3/glance_Linux_x86_64.tar.gz"
-      sha256 "61f47d32a234fc6c685338fb88231029d671783b71aad56d0ac4af88c21e3118"
+      url "https://github.com/wahyudotdev/glance/releases/download/v0.1.4/glance_Linux_x86_64.tar.gz"
+      sha256 "ddfd5eb139de3080aedbbbc2e41cd8f83fbdcb6be61b7461b1bbdc6dc90ae78e"
       def install
         bin.install "glance"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/wahyudotdev/glance/releases/download/v0.1.3/glance_Linux_arm64.tar.gz"
-      sha256 "873fbb5b656bfac7229f38e011a5869af89577abad2d581e653c6705c6f2a1a7"
+      url "https://github.com/wahyudotdev/glance/releases/download/v0.1.4/glance_Linux_arm64.tar.gz"
+      sha256 "b79fc1776b5f0c8cf43b5cf24134d44107f92f19b8484269ed1b609a047f887f"
       def install
         bin.install "glance"
       end
