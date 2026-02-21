@@ -11,7 +11,7 @@ class Glance < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/wahyudotdev/glance/releases/download/v0.1.4/glance_Darwin_x86_64.tar.gz"
-      sha256 "d00414238db23e4d520dc8e5aade5e24f9a1021a31b8e9ed2dc5e201ebeb55bb"
+      sha256 "36f557f69596b863d07417fe2e89f4d9651abb69cc61d1ad97b15164ee5c102e"
 
       def install
         bin.install "glance"
@@ -19,7 +19,7 @@ class Glance < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/wahyudotdev/glance/releases/download/v0.1.4/glance_Darwin_arm64.tar.gz"
-      sha256 "5aed27d8604a1c318138da4b2f2fe20c66ea9460887e9dedb95cc21c215cf1d3"
+      sha256 "833a42b47e398fec011bb9be92c7497410d80a228d47f47df154cd7a478f2fdf"
 
       def install
         bin.install "glance"
@@ -30,14 +30,14 @@ class Glance < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/wahyudotdev/glance/releases/download/v0.1.4/glance_Linux_x86_64.tar.gz"
-      sha256 "ddfd5eb139de3080aedbbbc2e41cd8f83fbdcb6be61b7461b1bbdc6dc90ae78e"
+      sha256 "97130587e8c617cccc278985f7bfb253bc0c8707e166a8e61bf7fd0d3b4366ea"
       def install
         bin.install "glance"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/wahyudotdev/glance/releases/download/v0.1.4/glance_Linux_arm64.tar.gz"
-      sha256 "b79fc1776b5f0c8cf43b5cf24134d44107f92f19b8484269ed1b609a047f887f"
+      sha256 "e20ba7563d56f83ede478c5838e1f9abc2ff8c148d6f68662305d4150504e83e"
       def install
         bin.install "glance"
       end
