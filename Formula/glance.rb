@@ -5,21 +5,21 @@
 class Glance < Formula
   desc "Glance is a specialized MITM proxy for AI Agents and developers."
   homepage "https://github.com/wahyudotdev/glance"
-  version "0.2.2"
+  version "0.2.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/wahyudotdev/glance/releases/download/v0.2.2/glance_Darwin_x86_64.tar.gz"
-      sha256 "cfe8da4cd28ef9e710d0d51efca39cfe7b8d7f208b54df473fb6c6850ad134b6"
+      url "https://github.com/wahyudotdev/glance/releases/download/v0.2.3/glance_Darwin_x86_64.tar.gz"
+      sha256 "3b854ddc623979a9c3e937c8dbcf21711e2f4161f1b6d8f94d00045ec668887f"
 
       define_method(:install) do
         bin.install "glance"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/wahyudotdev/glance/releases/download/v0.2.2/glance_Darwin_arm64.tar.gz"
-      sha256 "4c1db12063b43931620a242441379a03a9cbae33be259689de9fa2c5f1da9c72"
+      url "https://github.com/wahyudotdev/glance/releases/download/v0.2.3/glance_Darwin_arm64.tar.gz"
+      sha256 "3620cbfb7ff738ba22b9eee69039f0f62c9a417e9bad8a8f03fea6c437c56ef2"
 
       define_method(:install) do
         bin.install "glance"
@@ -29,15 +29,15 @@ class Glance < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/wahyudotdev/glance/releases/download/v0.2.2/glance_Linux_x86_64.tar.gz"
-      sha256 "c1152f57cc3ec796d15134a77e04c6e19f7d50e9fbdf3784d817ae4342500ee6"
+      url "https://github.com/wahyudotdev/glance/releases/download/v0.2.3/glance_Linux_x86_64.tar.gz"
+      sha256 "35e7f9cb5ed037934e8f35e1a9f2a7b8c28b53282f4ca8b98ed6ffe081abc120"
       define_method(:install) do
         bin.install "glance"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/wahyudotdev/glance/releases/download/v0.2.2/glance_Linux_arm64.tar.gz"
-      sha256 "df96b3e8d0af0980bf2a457e1c36e07cf3c19910a561a92763b26e4b10faadc5"
+      url "https://github.com/wahyudotdev/glance/releases/download/v0.2.3/glance_Linux_arm64.tar.gz"
+      sha256 "62e82dc6de822753e29fafacdf13a0c5ffbe7f0af1adace96c09a7816a996915"
       define_method(:install) do
         bin.install "glance"
       end
